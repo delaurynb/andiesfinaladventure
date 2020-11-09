@@ -100,31 +100,46 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="Andie&#39;s Final Adventure" startnode="1" creator="Twine" creator-version="2.3.9" ifid="B58C98C9-9E42-4030-B3D0-00DC8F3A1FA9" zoom="1" format="SugarCube" format-version="2.31.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Intro" tags="" position="100.5,100.5" size="100,100">Hi, Andie Adventure! It&#39;s another day as an IT intern for the Espionage Academy.
+	<tw-storydata name="Andie&#39;s Final Adventure" startnode="1" creator="Twine" creator-version="2.3.9" ifid="B58C98C9-9E42-4030-B3D0-00DC8F3A1FA9" zoom="1" format="SugarCube" format-version="2.31.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Intro" tags="" position="100,100" size="100,100">Hi, Andie Adventure! 
 
-You&#39;re minding your business until you get a call from Naomi. She&#39;s a high level agent at the Academy, and you all met while she was on an undercover mission at your school. 
+It&#39;s another day at your IT internship for the New Mexico Espionage Academy.
 
-[[Answer the call.|Answer]] </tw-passagedata><tw-passagedata pid="2" name="Answer" tags="" position="301.5,99.5" size="100,100">Naomi: &quot;Andie, I just got a tip about a bomb somewhere in the city. Need your help! Meet me at the resturant in 10.&quot;
+You spend your day querying data from the global database until you get an unexpected call from Naomi. Naomi is a high level agent at the Academy, and you met while she was on an undercover mission at your school. 
 
-[[Go to the resturant|Resturant]]</tw-passagedata><tw-passagedata pid="3" name="Resturant" tags="" position="500.5,99.5" size="100,100">You arrive at the resturant. Naomi is there with Ahren, another high level agent. 
+[[Answer the call.|Answer]] </tw-passagedata><tw-passagedata pid="2" name="Answer" tags="" position="301,99" size="100,100">Naomi: &quot;Andie, I need your help! Just got a tip about a nuclear bomb located somewhere in the city. Meet me at the resturant ASAP!&quot;
 
-You sit in the booth with them, and they give you the rundown of the situation. 
+Andie: [[&quot;On my way!&quot;|Resturant]]</tw-passagedata><tw-passagedata pid="3" name="Resturant" tags="" position="500,99" size="100,100">You arrive at the resturant and spot Naomi in a booth on the other side of the room discretely conversing with the server and what seems to be another agent.
 
-[[We need to come up with a plan|Plan]]
-</tw-passagedata><tw-passagedata pid="4" name="Plan" tags="" position="702.5,100.5" size="100,100">PLAN:
+As you approach, you recognize the other agent to be Ahren, known to be one of the most experienced agents at the Academy.
 
-You and Ahren are going to go search for the bomb while Naomi and Jordan track down the person who planted it. This person has the information on how to disarm the bomb. When Naomi and Jordan retrieve the info, they will let you and Ahren know immediately. 
+Once you reach the booth, you greet them, and slide into the seat next to Naomi. With focused looks on their faces, they brief you on the situation. 
+
+- - - - - - - - - -
+[BREIF:
+    - A tip has been received about a nuclear bomb located in or in 	  close proximity to the city. 
+	- We will assume the bomb has been detonated. In which case, we 	  have 1 hour to find and disarm it. 
+	- It is likely to be located in the most populous areas of the 		  city. ]
+- - - - - - - - - - -
+
+
+Andie: Okay, [[We need to come up with a plan.|Plan]]
+</tw-passagedata><tw-passagedata pid="4" name="Plan" tags="" position="704,100" size="100,100">The plan works best with 4 people, so in an unexpected turn of events, the server Jordan is also going to help with the mission.
+
+PLAN:
+
+You and Ahren are going to go search for the bomb while Naomi and Jordan track down the person who planted it. This person has the information on how to disarm the bomb. When Naomi and Jordan retrieve the info, they will notify you and Ahren immediately. 
 
 You and Ahren must locate the bomb and disarm it before it explodes. 
 
-There are three probable locations where the bomb will be. You and Ahren will split up to cover more ground. 
+There are three probable locations where the bomb will be found: the airport, city hall, and the most popular polling location, as it so happens to be Election Day. You and Ahren decide to split up to cover more ground. 
+
+The time is 2:00PM. You must complete the mission by 3:00PM 
 
 Where will you look first?:
-- [[The Airport|airport]] 
-- [[City Hall|city hall]]
-- [[The Election Polls|polls]] (the most popular polling location in the city)
-
-</tw-passagedata><tw-passagedata pid="5" name="airport" tags="" position="199.5,248.5" size="100,100">It takes you 15 minutes to get to the airport.
+- [[The Airport|airport]]: 15 minute commute
+- [[City Hall|city hall]]: 7 minute commute
+- [[The Election Polls|polls]]: 7 minute commute 
+</tw-passagedata><tw-passagedata pid="5" name="airport" tags="" position="199,248" size="100,100">It takes you 15 minutes to get to the airport.
 
 Using a bomb detection device you cover as much ground as you can in search of the bomb. 
 
@@ -132,7 +147,7 @@ You find the bomb in a stranded luggage near the baggage claim, and notify secur
 
 [[Message Ahren &quot;Found the bomb. At airport!&quot;|found message]]
 
-</tw-passagedata><tw-passagedata pid="6" name="city hall" tags="" position="400.5,249.5" size="100,100">It takes you 7 minutes to get to City Hall. &lt;&lt;set $cityhall to 1&gt;&gt;
+</tw-passagedata><tw-passagedata pid="6" name="city hall" tags="" position="400,249" size="100,100">It takes you 7 minutes to get to City Hall. &lt;&lt;set $cityhall to 1&gt;&gt;
 
 Using a bomb detection device you cover as much ground as you can in search of the bomb. 
 
@@ -140,7 +155,7 @@ It is nowhere to be found. Ahren went to the polling location, so the last place
 
 [[Message Ahren &quot;City Hall is clear. Headed to the airport.&quot;|lost message]]
 
-</tw-passagedata><tw-passagedata pid="7" name="polls" tags="" position="598.5,250.5" size="100,100">It takes you 7 minutes to get to the polls. &lt;&lt;set $polls to 1&gt;&gt;
+</tw-passagedata><tw-passagedata pid="7" name="polls" tags="" position="598,250" size="100,100">It takes you 7 minutes to get to the polls. &lt;&lt;set $polls to 1&gt;&gt;
 
 Using a bomb detection device you cover as much ground as you can in search of the bomb. 
 
@@ -148,45 +163,66 @@ It is nowhere to be found. Ahren went to City Hall, so the last place to be sear
 
 [[Message Ahren &quot;Polls are clear. Headed to the airport.&quot;|lost message]]
 
-</tw-passagedata><tw-passagedata pid="8" name="lost message" tags="" position="500.5,398.5" size="100,100">It takes you an additional 10 minutes to get to the airport.
+</tw-passagedata><tw-passagedata pid="8" name="lost message" tags="" position="500,398" size="100,100">It takes you an additional 10 minutes to get to the airport.
 
-Using a bomb detection device you cover as much ground as you can in search of the bomb. 
+Using a bomb detection device to cover as much ground as you can in search of the bomb. 
 
 You find the bomb in a stranded luggage near the baggage claim, and notify security to evacutate the airport. 
 
 [[Message Ahren &quot;Found the bomb. At airport!&quot;|found message]]
 
-</tw-passagedata><tw-passagedata pid="9" name="found message" tags="" position="201.5,400.5" size="100,100">Seconds later you get an incoming call from Ahren. 
+</tw-passagedata><tw-passagedata pid="9" name="found message" tags="" position="201,400" size="100,100">Seconds later you get an incoming call from Ahren. 
 
-&quot;Glad you found the bomb. Naomi and Jordan found the person who planted it. She just sent me the directions on how to disarm the bomb. I won&#39;t get to the ariport for another 5 minutes, but we don&#39;t have that much time. 
+&quot;Glad you found the bomb. Naomi and Jordan found the person who planted it. She just sent me instructions on how to disarm it. 
 
-Can you disarm it with my instructions?&quot; 
+I won&#39;t get to the ariport in enough time to disarm it. Can you disarm it with my instructions?&quot; 
 
 [[&quot;Yes. Without a doubt.&quot;|confident1]]
-[[&quot;I think so... I don&#39;t know. I&#39;ve never done this before.&quot;|unsure1]]</tw-passagedata><tw-passagedata pid="10" name="confident1" tags="" position="200.5,550.5" size="100,100">&quot;1st set of instructions from Ahren&quot;
+[[&quot;Uhh I think so... I don&#39;t know. I&#39;ve never done this before.&quot;|unsure1]]</tw-passagedata><tw-passagedata pid="10" name="confident1" tags="" position="199,550" size="100,100">Ahren: &quot;Locate the group of wires and cut the *static* bott *static* yellow wire and the red wire at the same time.&quot;
 
-[[&quot;Okay got it.&quot;|confident2]]
-[[&quot;What is that? Can you be more specific?&quot;|unsure2]]</tw-passagedata><tw-passagedata pid="11" name="unsure1" tags="" position="500.5,549.5" size="100,100">&quot;We don&#39;t have time for you to question yourself.&quot;
-&quot;1st set of instructions from Ahren&quot;
+Despite the static, trust our gut and [[cut the bottom yellow wire.|confident2]]
+[[&quot;Which yellow wire? I couldn&#39;t hear you becuase of the static.&quot;|unsure2]]</tw-passagedata><tw-passagedata pid="11" name="unsure1" tags="" position="500,549" size="100,100">Ahren: &quot;We don&#39;t have time for you to question yourself. Locate the group of wires and cut the *static* bott *static* yellow wire and the red wire at the same time.&quot;
 
-[[&quot;Okay got it.&quot;|confident2]]
-[[&quot;What is that? Can you be more specific?&quot;|unsure2]]</tw-passagedata><tw-passagedata pid="12" name="confident2" tags="" position="200.5,699.5" size="100,100">&quot;2nd set of instructions from Ahren&quot;
+Despite the static, trust our gut and [[cut the bottom yellow wire and the red wire.|confident2]]
+[[&quot;Which yellow wire? I couldn&#39;t hear you becuase of the static.&quot;|unsure2]]</tw-passagedata><tw-passagedata pid="12" name="confident2" tags="" position="200,699" size="100,100">Ahren: &quot;Now locate the small light bulb. If it turns RED, enter 853DPJD on the keypad. If it turns GREEN, enter 67IFD90 on the keypad.&quot;
 
-[[&quot;Yes. --this is thing is supposed to be happening right--?&quot;|confident3]]
-[[&quot;Okay. --this is (wrong) thing is supposed to be happening right--?&quot;|unsure3]]</tw-passagedata><tw-passagedata pid="13" name="unsure2" tags="" position="501.5,700.5" size="100,100">&quot;Are you kidding me? Why am I having to repeat myself?&quot;
-&quot;1st set of instructions + 2nd set of instructions from Ahren&quot;
+*insert green light* 
 
-[[&quot;Yes. --this is thing is supposed to be happening right--?&quot;|confident3]]
-[[&quot;Okay. --this is (wrong) thing is supposed to be happening right--?&quot;|unsure3]]</tw-passagedata><tw-passagedata pid="14" name="confident3" tags="" position="201.5,850.5" size="100,100">&quot;Okay last thing.&quot; &quot;3rd set of instructions from Ahren.&quot;
+[[ENTER 853DPJD|confident3]]
+[[ENTER 67IFD90|unsure3]]</tw-passagedata><tw-passagedata pid="13" name="unsure2" tags="" position="500,698" size="100,100">&quot;Are you kidding me? Why am I having to repeat myself?
 
-[[&quot;Got it!&quot; Disarm the bomb!|disarm]]</tw-passagedata><tw-passagedata pid="15" name="unsure3" tags="" position="499.5,851.5" size="100,100">&quot;No. --This thing is supposed to be happening--.&quot; &quot;3rd set of instructions from Ahren.&quot; 
+Locate the group of wires and cut the bottom yellow wire and the red wire at the same time. 
 
-[[&quot;Got it!&quot; Disarm the bomb!|disarm]]
+[[Cut the bottom yellow wire and the red wire.|confident2]]
+</tw-passagedata><tw-passagedata pid="14" name="confident3" tags="" position="201,850" size="100,100">- - - THE FIRST BATTERY SHUTS OFF - - -
 
-</tw-passagedata><tw-passagedata pid="16" name="disarm" tags="" position="349.5,998.5" size="100,100">The bomb has been successfully disarmed! You&#39;re a Hero!
+Ahren: &quot;Final instruction. Look at the sequence of numbers. - If the sequence contains 2, 5, AND 7, press the blue button. If not, press the yellow button.&quot;
+
+1782973946249
+
+[[BLUE|confident3.1]]
+[[YELLOW|disarm]]</tw-passagedata><tw-passagedata pid="15" name="unsure3" tags="" position="499,851" size="100,100">- - - WRONG CODE - - -
+Ahren: &quot;Come on! We&#39;re losing time. If it turns RED, enter 853DPJD on the keypad. If it turns GREEN, enter 67IFD90 on the keypad.&quot;
+
+*insert green light* 
+
+[[ENTER 853DPJD|confident3]]
+[[ENTER 67IFD90|unsure3]]
+
+</tw-passagedata><tw-passagedata pid="16" name="disarm" tags="" position="349,998" size="100,100">The bomb has been successfully disarmed! You&#39;re a Hero!
 
 Soon after the bomb is disarmed Ahren and the local bomb squad show up. Ahren congradulates you, and everyone is grateful to you for saving the day!
 
+
+[[Restart|Intro]]</tw-passagedata><tw-passagedata pid="17" name="confident3.1" tags="" position="190,996" size="100,100">Andie: &quot;Agh, I missed up...&quot;
+Ahren: &quot;Try again and do it right this time!&quot;
+
+2753289370
+
+[[BLUE|disarm]]
+[[YELLOW|fail]]</tw-passagedata><tw-passagedata pid="18" name="fail" tags="" position="98,1124" size="100,100">- - - - BOOM - - - - 
+
+TIMES UP! YOU EXPLODED :(
 
 [[Restart|Intro]]</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
